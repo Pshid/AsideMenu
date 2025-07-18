@@ -76,13 +76,14 @@ body {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  padding: 23px 0 50px;
 }
 
-.header__logo-menu {
+/* .header__logo-menu {
   display: flex;
   align-items: center;
   padding: 23px 0 50px;
-}
+} */
 
 .header__button--left {
   background-image: url("iconsMenu/burger.svg");
@@ -96,8 +97,9 @@ body {
 
 .header__button--right {
   background-image: url("iconsMenu/search.svg");
-  transform: translateX(78px);
+  /* transform: translateX(78px); */
   padding-right: 24px;
+  margin-left: auto;
 }
 
 /* MAIN */
@@ -163,27 +165,47 @@ body {
   padding-bottom: 12px;
 }
 
-.footer__contacts-item--email {
+.footer__contact--email {
   font-family: 'TT Lakes', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
+  padding-bottom: 12px;
 }
 
-.footer__contacts-item--phone {
+.footer__contact--phone {
   font-family: 'TT Lakes', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.6px;
-  padding-bottom: 24px;
+  /* padding-bottom: 24px; */
+}
+address {
+    font-style: normal; /* Убираем курсив */
+    /* margin: 0; Убираем отступы */
+    /* padding: 0; Убираем отступы */
+}
+
+/* Сохраняем оригинальные стили контактов */
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.footer__contacts-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 .footer__lang {
   display: flex;
   column-gap: 7px;
   padding-bottom: 32px;
+  padding-top: 40px;
 }
 
 .footer__lang-item.active,
