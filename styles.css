@@ -75,7 +75,7 @@ body {
 .header-page {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 23px 0 50px;
 }
 
@@ -98,7 +98,7 @@ body {
 .header__button--right {
   background-image: url("iconsMenu/search.svg");
   /* transform: translateX(78px); */
-  padding-right: 24px;
+  margin-right: 24px;
   margin-left: auto;
 }
 
